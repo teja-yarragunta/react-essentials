@@ -53,4 +53,32 @@ Props refer to the properties being passed into a component in order for it to w
 state:
 state refers to the values that are managed by the component, similar to variables declared inside a function, anytime we have changing values that should be saved/displayed, we have to use state.
 
-making changes to local variable doesn't let react to re-run the component, instead we have to provide a state variable and function to change that change to let react re-run the component
+making changes to local variable doesn't let react to re-run the component, instead we have to provide a state variable and function to change that change to let react re-run the component.
+
+What are react's primary tasks?
+
+Work with DOM/Browser to render UI to the page
+
+Manage State for us between render cycles (ie 'state values are remembered' from one render to the next)
+
+keep the UI updated whenever state or props changes occur
+
+Side Effects - what react isn't charge of
+
+(Out)Side Effects!
+
+localstorage
+
+API/database interactions
+
+Subscriptions (eg. web-socket connections)
+
+useRefs
+
+Refs are similar to state, except :
+
+1.  we can mutate them directly
+
+2.  changing them doesn't cause a re-render
+
+They are commonly used for accessing DOM nodes without needing to assign ids to elements
