@@ -37,7 +37,7 @@ reusable building blocks that encapsulate a part of the user interface (UI) and 
 components should follow PascalCasing
 
 if we export a component as default we don't need to put that component in { } while importing and with whatever name we want
-./ indicates that's it's our own file and loves in the current directory, and it's not some third party package, and the default is .js extension also works from .jsx, so we don't need to specify the extension
+./ indicates that's it's our own file and lives in the current directory, and it's not some third party package, and the default is .js extension also works from .jsx, so we don't need to specify the extension
 
 ```
 <button onClick={handleClick()}>Click me</button>
